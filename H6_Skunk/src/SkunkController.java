@@ -3,6 +3,7 @@ import edu.princeton.cs.introcs.*;
 
 public class SkunkController
 {
+	private static final int SKUNK_DEUCE_SUM = 3;
 	public SkunkUI skunkUI;
 	public UI ui;
 	public int numberOfPlayers;
@@ -239,7 +240,7 @@ public class SkunkController
 
 	private boolean isSkunkDeuce()
 	{
-		return skunkDice.getLastRoll() == 3;
+		return skunkDice.getLastRoll() == SKUNK_DEUCE_SUM;
 	}
 
 	private boolean isDoubleSkunk()
